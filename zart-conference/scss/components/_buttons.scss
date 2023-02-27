@@ -1,0 +1,70 @@
+@use "../common" as *;
+
+.btn{
+
+    --bs-btn-border-radius:0px;
+    --bs-btn-bg:transparent;
+    --bs-btn-disabled-border-color:transparent;
+    --bs-btn-box-shadow:none;
+    font-family: $secondary-font;
+    --bs-btn-font-size:18px;    
+    --bs-btn-font-weight:400;
+    --bs-btn-line-height:27px;
+    text-transform: uppercase;
+    --bs-btn-padding-x: 30px;
+    --bs-btn-padding-y: 8px;
+    --bs-btn-hover-bg:#{$primary};
+    --bs-btn-hover-border-color:transparent;
+}
+
+.btn-primary{
+    --bs-btn-bg:#000;
+    --bs-btn-border-color:transparent;
+}
+
+.btn-secondary{
+    --bs-btn-bg:#fff;
+    --bs-btn-border-color:#000;
+    --bs-btn-color:#000;
+}
+
+.btn-tertiary{
+    --bs-btn-border-color:transparent;
+    font-family: $font-family-base;
+    padding:8px 30px;
+    border: 1px solid $white;
+    &:hover{
+        border: 1px solid $white;
+    }
+}
+
+.navbar{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-focus-width: 0;
+}
+
+.nav-tabs{
+   text-align: center;
+   font-family:$primary-font;
+   font-size: 20px;
+   .nav-link{
+    border:solid 1px #8B8B8B;
+    border-radius: 0;
+    color:$primary;
+     .date{
+        font-size: 14px;
+        font-family: $font-family-base;
+     }
+     &:hover{
+        //border-color:#8B8B8B;
+     }
+   }
+}
+
+.nav-tabs .nav-link.active{
+    background-color: $primary;
+    color:$white;
+    border-color:$primary;
+    // border:1px solid $primary;
+
+}

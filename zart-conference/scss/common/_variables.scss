@@ -1,0 +1,59 @@
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Customize some defaults
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1140px,
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1140px,
+  xxl: 1600px
+);
+
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+$primary:#000;
+$font-family-base: 'Inter', sans-serif;
+
+$primary:#000;
+$secondary:#C04093;
+$white: #fff;
+
+$primary-font :'Bebas Neue', cursive;
+$secondary-font: 'Oswald', sans-serif;
+
+$video-thumnail-border-spacing: 20px;
+
+$nav-link-padding-x: 0.938rem;
+$nav-link-padding-y: 0.938rem;
+$nav-link-font-size: 1.125rem;
+$nav-link-color:  #fff;
+
+
+
+
+$accordion-bg:#000;
+$accordion-color:#fff;
+$accordion-border-color:  #D8E8EC;
+$accordion-button-active-bg:#000;
+$accordion-button-active-color:#fff;
+$accordion-border-width: 0px;
+$accordion-inner-border-radius: 0;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow:transparent;
+
+
+

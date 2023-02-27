@@ -1,0 +1,60 @@
+@use "../common" as *;
+.navigation{
+
+        .navbar-nav{
+
+            .nav-link{
+                color: #{$white};
+                text-decoration: none;
+                font-family: $secondary-font;
+                text-transform: uppercase;
+                font-size: 18px;
+                padding: 11px 25px 11px 0;
+            }
+
+        }
+
+        .dropdown-toggle{
+
+            &:after{
+                content: "";
+                background-image: url("/media/dd_arrow.svg");
+                width: 8px;
+                height: 5px;
+                display: inline-block;
+                border:none;
+            }
+
+        }
+    }
+
+    .navbar-toggler{
+        color:$white;
+    }
+
+    .nav__bar{
+        background-color: black;
+        margin-top: 1.125rem;
+    }
+    // .navigation__links{ 
+    //     a{
+    //         text-transform: uppercase;
+    //         font-family: $secondary-font;
+    //         display: flex;
+    //         align-items: center;
+    //         gap: 8px;
+    //         line-height: 1.125rem;
+            
+    //     }
+    //     .dropdown__nav{
+    //         a{
+    //             &:after{
+    //                 content: "";
+    //                 background-image: url("/media/dd_arrow.svg");
+    //                 width: 8px;
+    //                 height: 5px;
+    //                 display: inline-block;
+    //             }
+    //         }
+    //     }
+    // }

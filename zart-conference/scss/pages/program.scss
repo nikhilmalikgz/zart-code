@@ -1,0 +1,68 @@
+@use '../common' as *;
+
+hr{
+    color:#CBCBCB;
+}
+
+.download-program{
+    h1{
+        font-family: $primary-font;
+        font-size: 60px;
+    }
+}
+
+.content-left-image{
+    .content{
+        //padding: 0 0 0 20px;
+    }
+}
+
+.workshops{
+
+    &>.d-flex{
+        row-gap:6px;
+    }
+
+    &>h1{
+        font-family:$primary-font;
+    }
+    .artist-content{
+        width: 33%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        &__title{
+            font-size: 34px;
+        }
+        &__timing{
+            padding-top:20px;
+        }
+        .more_info{
+            font-size:14px;
+        }
+        
+
+    }
+}
+
+
+// media queries
+
+@media only screen and (max-width: 768px) {
+
+    .workshops{
+        .artist-content{
+            width: 48.5%
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .workshops{
+        .artist-content{
+            width: 100%
+        }
+    }
+
+}

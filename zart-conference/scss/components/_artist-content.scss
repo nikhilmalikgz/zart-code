@@ -1,0 +1,30 @@
+@use '../common' as *;
+
+.artist-content{
+    & > h1{
+        font-family:$primary-font;
+    }
+    .artist-content__info{
+        padding: 0 20px 20px;
+    }
+    &__timing{
+
+        font-family: $primary-font;
+        color:#C04093;
+        font-size: 16px;
+
+    }
+    &__title{
+        font-family: $primary-font;
+    }
+    &__personal-info{
+        .name{
+            font-family: $primary-font;
+            font-size:14px;
+        }
+        .occupation{
+            font-size: 12px;
+        }
+       
+    }
+}

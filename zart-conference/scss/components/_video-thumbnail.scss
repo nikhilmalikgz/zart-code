@@ -1,0 +1,36 @@
+@use '../common' as *;
+
+.video-thumbnail{
+    position: relative;
+    img{
+        padding-top:$video-thumnail-border-spacing;
+        padding-right: $video-thumnail-border-spacing;
+    }
+    &:after{
+        content: "";
+        width: 94%;
+        height: 94%;
+        border: solid 2px #F8A519;
+        position: absolute;
+        right:0;
+        top: 0;
+        z-index: -1;
+    }
+
+    &.enable-video:before{
+
+        content:"";
+        background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='61' height='61' viewBox='0 0 61 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cellipse cx='30.5421' cy='30.3197' rx='29.9537' ry='29.8431' fill='white' fill-opacity='0.15'/%3e%3cpath d='M56.4717 30.3197C56.4717 44.5847 44.8643 56.1519 30.542 56.1519C16.2197 56.1519 4.6123 44.5847 4.6123 30.3197C4.6123 16.0547 16.2197 4.48755 30.542 4.48755C44.8643 4.48755 56.4717 16.0547 56.4717 30.3197Z' fill='%23C04093' stroke='white'/%3e%3cpath d='M25.5498 39.4396V20.3719L40.4351 29.9058L25.5498 39.4396Z' fill='white' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ") no-repeat;
+        position:absolute;
+        background-position: center;
+        left: 0;
+        right: 0;
+        top:calc(50% - $video-thumnail-border-spacing);
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+
+    }
+
+}

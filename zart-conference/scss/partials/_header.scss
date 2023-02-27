@@ -1,0 +1,58 @@
+@use "../common" as *; 
+
+body {
+    border-top: 6px solid #000;
+}
+
+.logo{
+    width: 82px;
+    display: flex;
+    img{
+        max-width: 100%;
+    }
+}
+
+.header{    
+    &__row{
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    &__left--block{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    &__conf-title{
+        display: flex;    
+        gap: 3px;
+        align-items: center;    
+       
+        span{
+            @include svg_fw;
+            width: 8px;
+            height: 55px;
+            display: inline-block;
+        }      
+        h6{
+            font-family: $primary-font;
+            font-size: 23px;
+            width: 90px;
+            line-height: 27px;
+            margin: 2px 0 0 0;
+        }  
+    }
+    &__conf-date{
+        display: flex;
+        max-width: 114px;
+        p{
+            font-family: $secondary-font;
+            font-size: 18px;
+        }
+    }
+}
+
+header{
+    p{
+        margin-bottom: 0;
+    }   
+}

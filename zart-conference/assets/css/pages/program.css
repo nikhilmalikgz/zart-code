@@ -1,0 +1,72 @@
+.border-effect {
+  position: relative;
+}
+.border-effect::before {
+  content: "";
+  border: 1px solid #C04093;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -0.4375rem;
+  left: 0.4375rem;
+  z-index: -1;
+}
+
+.border-effect-workshop {
+  position: relative;
+}
+.border-effect-workshop::before {
+  content: "";
+  border: 1px solid #C5D646;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -0.5625rem;
+  left: 0.5625rem;
+}
+.border-effect-workshop img {
+  position: relative;
+}
+
+hr {
+  color: #CBCBCB;
+}
+
+.download-program h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+}
+
+.workshops > .d-flex {
+  row-gap: 6px;
+}
+.workshops > h1 {
+  font-family: "Bebas Neue", cursive;
+}
+.workshops .artist-content {
+  width: 33%;
+  background-color: #F8F8F8;
+  z-index: 2;
+}
+.workshops .artist-content__title {
+  font-size: 34px;
+}
+.workshops .artist-content__timing {
+  padding-top: 20px;
+}
+.workshops .artist-content .more_info {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .workshops .artist-content {
+    width: 48.5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .workshops .artist-content {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=program.css.map */
