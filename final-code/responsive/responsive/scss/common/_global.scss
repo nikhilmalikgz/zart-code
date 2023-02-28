@@ -1,0 +1,57 @@
+/**************Headings******/
+h1{
+  font-size: 3.75rem;
+  color: #000;
+  font-family: $primary-font;
+  margin: 0;
+  line-height: 4.5rem;
+  @media screen and (max-width:1025px){
+      font-size: 3rem;
+      line-height: 3rem;
+  }
+  @include media-breakpoint-down(lg){
+      font-size: 3rem;
+      line-height: 3rem;
+  }
+  @include media-breakpoint-down(sm){
+      font-size: 2.75rem;
+      line-height: 3.25rem;
+  }
+}
+h6{
+    @include zt-heading-6(#000000);
+}
+
+/****************Buttons**********/
+.btn{
+    --bs-btn-border-radius:0px;
+    --bs-btn-bg:transparent;
+    --bs-btn-disabled-border-color:transparent;
+    --bs-btn-box-shadow:none;
+    font-family: $secondary-font;
+    --bs-btn-font-size:18px;    
+    --bs-btn-font-weight:400;
+    --bs-btn-line-height:27px;
+    text-transform: uppercase;
+    --bs-btn-padding-x: 30px;
+    --bs-btn-padding-y: 8px;
+    --bs-btn-hover-bg:#000;
+    --bs-btn-hover-border-color:transparent;
+
+    &.btn-style2 {
+        background : none;
+        border: 1px solid #FFFFFF;
+        color: #fff;
+    }
+}
+
+.btn-primary{
+    --bs-btn-bg:#000;
+    --bs-btn-border-color:transparent;
+}
+
+.btn-secondary{
+    --bs-btn-bg:#fff;
+    --bs-btn-border-color:#000;
+    --bs-btn-color:#000;
+}

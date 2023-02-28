@@ -1,0 +1,10 @@
+.hero__section-inner{
+  margin-top: 2.5rem;
+  @include media-breakpoint-down(lg){
+      margin-top: 1rem;
+  }
+  .height-banner {
+    height: 246px;
+  }
+  
+}

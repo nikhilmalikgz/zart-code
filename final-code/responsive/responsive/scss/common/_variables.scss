@@ -1,34 +1,8 @@
 $primary-font :'Bebas Neue', cursive;
 $secondary-font: 'Oswald', sans-serif;
+$white : #fff;
 
 
-.btn{
-
-    --bs-btn-border-radius:0px;
-    --bs-btn-bg:transparent;
-    --bs-btn-disabled-border-color:transparent;
-    --bs-btn-box-shadow:none;
-    font-family: $secondary-font;
-    --bs-btn-font-size:18px;    
-    --bs-btn-font-weight:400;
-    --bs-btn-line-height:27px;
-    text-transform: uppercase;
-    --bs-btn-padding-x: 30px;
-    --bs-btn-padding-y: 8px;
-    --bs-btn-hover-bg:#000;
-    --bs-btn-hover-border-color:transparent;
-}
-
-.btn-primary{
-    --bs-btn-bg:#000;
-    --bs-btn-border-color:transparent;
-}
-
-.btn-secondary{
-    --bs-btn-bg:#fff;
-    --bs-btn-border-color:#000;
-    --bs-btn-color:#000;
-}
 
 
 

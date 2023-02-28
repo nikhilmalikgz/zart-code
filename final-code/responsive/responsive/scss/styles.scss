@@ -126,11 +126,15 @@ $accordion-button-focus-box-shadow:transparent;
 @import "icon-list";
 @import "common/variables";
 @import "common/mixins";
+@import "common/global";
 @import "header";
 @import "navigation";
-@import "pages/home-page";
 @import "components/accordion";
+@import "components/banner-inner-pages";
 @import "footer";
+
+@import "pages/home-page";
+@import "pages/program";
 
 body{
   border-top: 6px solid #000;
@@ -141,3 +145,8 @@ body{
   max-width: 1200px;
 }
 }
+@include media-breakpoint-up(xxl){
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+  }

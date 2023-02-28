@@ -20,25 +20,7 @@
     @include media-breakpoint-down(sm){
         padding: 1.25rem;
     }
-    h1{
-        font-size: 3.75rem;
-        color: #000;
-        font-family: $primary-font;
-        margin: 0;
-        line-height: 4.5rem;
-        @media screen and (max-width:1025px){
-            font-size: 3rem;
-            line-height: 3rem;
-        }
-        @include media-breakpoint-down(lg){
-            font-size: 3rem;
-            line-height: 3rem;
-        }
-        @include media-breakpoint-down(sm){
-            font-size: 2.75rem;
-            line-height: 3.25rem;
-        }
-    }
+ 
     p{
         font-size: 1.375rem;
         margin-bottom: 0;
@@ -95,8 +77,6 @@
  
     h6{
         color: $secondary;
-        font-size: .875rem;
-        font-family: $secondary-font;
     }
     h4{
         font-family: $primary-font;
@@ -147,10 +127,7 @@
         padding-top: 2.5rem;
     }
     h6{
-        font-size: .875rem;
-        font-family: $secondary-font;
         color: #757575;
-        font-weight: 400;
     }
     h4{
         font-family: $primary-font;
@@ -185,7 +162,7 @@
         @include zt-heading-4(#fff);
     }
     h6{
-        @include zt-heading-6(#C5D646)
+        color: #C5D646;
     }
 }
 
@@ -212,6 +189,7 @@
         line-height: .875rem;
         font-weight: 400;
         margin: 0;
+        color: $white;
     }
 }
 
@@ -268,10 +246,8 @@
     }
     .profile__info{
         h6{
-            font-size: .875rem;
-            font-family: $secondary-font;
-            font-weight: 400;
             margin-bottom: 0;
+            color: $white;
         }
         p{
             font-size: .75rem;
