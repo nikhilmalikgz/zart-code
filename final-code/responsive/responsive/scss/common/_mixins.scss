@@ -1,0 +1,93 @@
+@mixin f_w{
+    width: 100%;
+    height: 100%;
+}
+
+@mixin svg_fw{
+    svg{
+        @include f_w();
+    }
+}
+
+
+
+@mixin border-effect{
+    position: relative;
+        &::before{
+            content: "";
+            border: 1px solid #C04093;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -0.4375rem;
+            left: .4375rem;
+            z-index: -1;
+        }
+}
+
+.border-effect{
+    @include border-effect;
+}
+
+
+@mixin border-effect-workshop{
+    position: relative;
+        &::before{
+            content: "";
+            border: 1px solid #C5D646;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -0.5625rem;
+            left: .5625rem;            
+        }        
+        img{
+            position: relative;
+        }
+}
+.border-effect-workshop{
+    @include border-effect-workshop;    
+}
+
+
+@mixin conference__title($color:#000){
+    display: flex;    
+    gap: 3px;
+    align-items: center;    
+    color: $color;
+    span{
+        @include svg_fw;
+        width: 8px;
+        height: 55px;
+        display: inline-block;
+    }      
+    h6{
+        font-family: $primary-font;
+        font-size: 23px;
+        width: 90px;
+        line-height: 27px;
+        margin: 2px 0 0 0;
+    } 
+}
+
+@mixin zt-heading-6($color){
+    font-size: .875rem;
+    font-family: $secondary-font;
+    color: $color;
+    font-weight: 400;
+}
+@mixin zt-heading-4($color){
+    font-family: $primary-font;
+    font-size: 2.5rem;    
+    margin: auto;
+    color: $color;
+    @include media-breakpoint-down(sm){
+        font-size: 2rem;
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .gx-m-0{
+        --bs-gutter-x:0;
+    }
+}

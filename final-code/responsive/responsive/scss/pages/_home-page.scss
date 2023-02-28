@@ -1,0 +1,283 @@
+.hero__section{
+    margin-top: 2.5rem;
+    @include media-breakpoint-down(lg){
+        margin-top: 1rem;
+    }
+}
+
+.banner__block{
+    img{
+        width: 100%;
+    }
+}
+.conf__info--block{
+    background-color: #F4F4F4;
+    padding: 1.875rem 1.875rem 0.875rem 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    @include media-breakpoint-down(sm){
+        padding: 1.25rem;
+    }
+    h1{
+        font-size: 3.75rem;
+        color: #000;
+        font-family: $primary-font;
+        margin: 0;
+        line-height: 4.5rem;
+        @media screen and (max-width:1025px){
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        @include media-breakpoint-down(lg){
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 2.75rem;
+            line-height: 3.25rem;
+        }
+    }
+    p{
+        font-size: 1.375rem;
+        margin-bottom: 0;
+        @include media-breakpoint-down(lg){
+            font-size: 1.25rem;
+        }
+    }   
+}
+.conf__date--block{
+    background: $secondary;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.563rem 1.063rem;
+    h6{
+        font-size: 1.125rem;
+        color: #fff;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: normal;
+    }
+}
+
+
+.social__update--block{
+    margin-top: 1.875rem;
+    background: rgba(208, 208, 208, 0.2);
+    padding: 1.125rem 1.875rem;
+    @include media-breakpoint-down(sm){
+        padding: 1.25rem;
+    }
+    .social__link{
+        display: flex;
+        justify-content: flex-end;
+        @include media-breakpoint-down(sm){
+            justify-content: flex-start;
+            margin-top: 1.0625rem;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &:hover{
+                svg path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+   
+.social__update__title{
+ 
+    h6{
+        color: $secondary;
+        font-size: .875rem;
+        font-family: $secondary-font;
+    }
+    h4{
+        font-family: $primary-font;
+        font-size: 2.5rem;
+        @include media-breakpoint-down(sm){
+            font-size: 1.875rem;
+        }
+    }
+}
+
+
+.home__video--block{    
+    background-color: #000;
+    position: relative;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    @include media-breakpoint-down(lg){ 
+        margin-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }  
+    .home__video--container{
+        position: relative;
+        z-index: 1;     
+         
+        @include media-breakpoint-down(sm){
+            --bs-gutter-x:0;
+        }
+    }
+    &::before{
+        content: "";
+        background-image: url("/media/retro__bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 29.1875rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include media-breakpoint-down(sm){
+            height: 20rem;
+        }
+    }
+    
+}
+.home__video--title{
+    padding-top: 5.125rem;
+    @include media-breakpoint-down(lg){ 
+        padding-top: 2.5rem;
+    }
+    h6{
+        font-size: .875rem;
+        font-family: $secondary-font;
+        color: #757575;
+        font-weight: 400;
+    }
+    h4{
+        font-family: $primary-font;
+        font-size: 2.5rem;
+        max-width: 28.75rem;
+        margin: auto;
+        color: #000;
+        @include media-breakpoint-down(sm){
+            font-size: 2rem;
+        }
+    }
+   
+}
+.video--cont{
+    margin-top: 2.125rem;
+    .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
+
+.acc--block-title{
+    margin-top: 5rem;
+    margin-bottom: 1.875rem;
+    @include media-breakpoint-down(lg){ 
+        margin-top: 3rem;
+    }
+    h4{
+        @include zt-heading-4(#fff);
+    }
+    h6{
+        @include zt-heading-6(#C5D646)
+    }
+}
+
+.acc__bg--color{
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.acc__day--header{
+    border: 1px solid #8B8B8B;
+    color: #fff;
+    @include media-breakpoint-down(sm){
+        border-left: 0px;
+        border-right: 0px;
+    }
+    h5{
+        font-size: 1.25rem;
+        font-family: $secondary-font;
+        line-height: 1.875rem;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    h6{
+        font-size: .75rem;
+        line-height: .875rem;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.accordion__outer--block {
+    .workshops_body{
+        .card__banner{
+            img{
+                width: 100%;
+            }
+        }
+        .card-title{
+            font-family: $secondary-font;
+            font-size: 1.25rem;
+            margin-top: .6875rem;
+            margin-bottom: .8125rem;
+            line-height: 1.6875rem;
+        }
+        .wk__link{
+            color: #1FA79D;
+            font-size: .875rem;
+            line-height: 1.3125rem;            
+            font-weight: 600;
+                span{
+                    text-decoration: underline;                    
+                }
+                svg{
+                    margin-left: .3125rem;;
+                }
+        }
+    }
+    .card-text {
+        @include media-breakpoint-down(sm){ 
+                font-size: .875rem !important;
+                line-height: 1.4rem  !important;
+        
+        }
+    }
+}
+
+.workshop__artist-detail{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin-bottom: .625rem;
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: .5625rem;
+    .profile__pic{
+        width: 3.125rem;
+        img{
+            border: 2px solid #C1DBE0;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    .profile__info{
+        h6{
+            font-size: .875rem;
+            font-family: $secondary-font;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: .75rem;
+            font-family: $secondary-font;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+    }
+}

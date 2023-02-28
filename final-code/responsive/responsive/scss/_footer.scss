@@ -1,0 +1,95 @@
+.footer__container{
+    background-color: #000;
+    border-top: 1px solid #4A4A4A;
+    padding-top: 2.625rem;
+    .ftr__logo--block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .9375rem;
+        .logo{
+            width: auto;
+        }
+    }
+    .navigation__links{
+        justify-content: center;
+        margin-top:0.5rem;
+        @include media-breakpoint-down(sm){
+            margin-bottom: .625rem;
+        }
+        a{
+            font-size: 1rem;
+            font-family: var(--bs-body-font-family);
+            font-weight: 400;
+            text-transform: capitalize;
+            gap: 10px;
+            padding-right: 0px;
+            padding-left: .625rem;
+            @include media-breakpoint-down(sm){
+                font-size: .875rem;
+                padding-left: .5rem;
+                gap: .5rem;
+            }
+            &:after{
+                content: "|";
+                font-size: 1rem;
+                color: #fff;
+                
+            }
+        }
+        li{
+            &:last-child{
+                a{
+                    &::after{
+                        display: none
+                    }
+                }
+            }
+        }
+    }
+    .footer__imp-nav{
+        @include media-breakpoint-up(lg){
+            justify-content: flex-start;
+        }
+        
+        a{
+            color: #fff;
+            padding-top: 0px;
+            padding-bottom: 0;
+            &:after{
+                color: #4a4a4a;
+            }
+        }
+    }
+}
+
+.social__media__icons{
+    gap: 14px;
+    justify-content: flex-end;    
+    margin-bottom: 14px;
+    @include media-breakpoint-down(lg){
+        justify-content: center;
+        margin-top: .9375rem;
+    }
+    svg {
+        @include media-breakpoint-down(sm){
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.ftr__desc{
+    color: #fff;
+    line-height: 1.625rem;
+    margin-top: .5625rem;
+    @include media-breakpoint-down(sm){
+       p{
+        font-size: .875rem
+       }
+    }
+}
+
+
+.conference__title{
+    @include conference__title(#fff);
+}
