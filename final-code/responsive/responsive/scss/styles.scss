@@ -136,18 +136,10 @@ $accordion-button-focus-box-shadow:transparent;
 @import "pages/home-page";
 @import "pages/program";
 @import "pages/pricing";
+@import "pages/speker";
+
 
 body{
   border-top: 6px solid #000;
 }
 
-@include media-breakpoint-up(xl){
-.container-xl, .container-lg, .container-md, .container-sm, .container {
-  max-width: 1200px;
-}
-}
-@include media-breakpoint-up(xxl){
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
-  }
-  }

@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    height: 100%;
     @include media-breakpoint-down(sm){
         padding: 1.25rem;
     }
@@ -78,13 +79,6 @@
     h6{
         color: $secondary;
     }
-    h4{
-        font-family: $primary-font;
-        font-size: 2.5rem;
-        @include media-breakpoint-down(sm){
-            font-size: 1.875rem;
-        }
-    }
 }
 
 
@@ -130,11 +124,8 @@
         color: #757575;
     }
     h4{
-        font-family: $primary-font;
-        font-size: 2.5rem;
         max-width: 28.75rem;
-        margin: auto;
-        color: #000;
+        margin:0 auto;
         @include media-breakpoint-down(sm){
             font-size: 2rem;
         }
@@ -159,7 +150,7 @@
         margin-top: 3rem;
     }
     h4{
-        @include zt-heading-4(#fff);
+        color: $white;
     }
     h6{
         color: #C5D646;
