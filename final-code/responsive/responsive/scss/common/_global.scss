@@ -1,3 +1,15 @@
+@include media-breakpoint-up(xl){
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+  max-width: 1200px;
+}
+}
+@include media-breakpoint-up(xxl){
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+   max-width: 1550px;
+}
+}
+
+
 /**************Headings******/
 h1{
   font-size: 3.75rem;
@@ -17,6 +29,12 @@ h1{
       font-size: 2.75rem;
       line-height: 3.25rem;
   }
+}
+h4{
+    @include zt-heading-4(#000);
+    @include media-breakpoint-down(sm){
+        font-size: 1.875rem;
+    }
 }
 h6{
     @include zt-heading-6(#000000);
@@ -54,4 +72,13 @@ h6{
     --bs-btn-bg:#fff;
     --bs-btn-border-color:#000;
     --bs-btn-color:#000;
+}
+
+
+/*******background graphics*******/
+.traingle-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }

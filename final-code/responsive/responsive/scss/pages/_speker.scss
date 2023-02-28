@@ -1,0 +1,26 @@
+.info-banner {
+  padding: 2.5rem 0;
+  position: relative;
+  .bg-light {
+    background: #F5F5F5;
+    padding: .8rem 0;
+  }
+  h6 {
+    color: $grey;
+  }
+  .speker-detail {
+    ul {
+      list-style: none;
+      li {
+        flex: 0 0 50%;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        &:last-child {
+          flex: 0 0 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
