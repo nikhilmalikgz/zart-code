@@ -1,0 +1,58 @@
+.accordion__outer--block{
+    padding: 1.25rem;
+    @include media-breakpoint-down(sm){
+        padding: .9375rem;
+    }
+    > .accordion{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+        .accordion-button{
+            font-family: $secondary-font;
+            font-size: 1.25rem;
+        }
+        .accordion-button:focus{
+            // border-bottom: none;
+            // box-shadow: none;
+        }
+        .accordion-button.collapsed{
+            // border: none;
+        }    
+        .card-title{
+            @include zt-heading-4(#fff);
+            margin-top: 1.25rem;
+            margin-bottom: .9375rem;
+        }
+        .card-text{
+            font-size: 1.125rem;
+            line-height: 1.5625rem;
+        }
+       
+}
+
+.accordion-flush .accordion-item:last-child{
+    border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+
+.accordion__outer--block .accordion-button.collapsed{
+    border-bottom: 1px solid #fff;
+}
+.accordion__outer--block  .accordion-button{
+    border-bottom: 1px solid #fff;
+}
+
+.accordion-body.workshops_body{
+    margin-top: .625rem;
+}
+.zt--btn{
+    color: #fff;
+    font-size: 1.125rem;
+    font-family: $secondary-font;
+    padding: .5rem 1.875rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+}
