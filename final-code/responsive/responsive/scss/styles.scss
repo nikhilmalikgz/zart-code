@@ -41,10 +41,10 @@ $grid-breakpoints: (
 );
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
+  md: 738px,
   lg: 960px,
-  xl: 1170px,
-  xxl: 1320px
+  xl: 1200px,
+  xxl: 1550px
 );
 
 $body-color: #333;
@@ -123,7 +123,6 @@ $accordion-button-focus-box-shadow:transparent;
 // Custom styles
 //
 
-@import "icon-list";
 @import "common/variables";
 @import "common/mixins";
 @import "common/global";
@@ -131,15 +130,20 @@ $accordion-button-focus-box-shadow:transparent;
 @import "navigation";
 @import "components/accordion";
 @import "components/banner-inner-pages";
+@import "components/image-detail-block";
+@import "components/icon-list";
 @import "footer";
 
 @import "pages/home-page";
 @import "pages/program";
 @import "pages/pricing";
-@import "pages/speker";
+@import "pages/speaker";
 
 
 body{
   border-top: 6px solid #000;
+  @include media-breakpoint-down(md){
+    border-top: 2px solid #000;
+  }
 }
 

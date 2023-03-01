@@ -1,0 +1,12 @@
+.image-detail-block {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  h6 {
+    color: $yellow;
+  }
+  h4, p {
+    color: $white;
+  }
+}

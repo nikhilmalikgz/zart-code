@@ -9,7 +9,6 @@
   "scripts": {
     "build": "npm run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
-    "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix",
     "start": "npm-run-all --parallel watch server",
@@ -17,7 +16,6 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3"
   },
   "devDependencies": {
@@ -28,7 +26,6 @@
     "postcss-cli": "^9.1.0",
     "sass": "^1.54.8",
     "serve": "^14.1.2",
-    "stylelint": "^14.11.0",
     "stylelint-config-twbs-bootstrap": "^3.2.1"
   }
 }
