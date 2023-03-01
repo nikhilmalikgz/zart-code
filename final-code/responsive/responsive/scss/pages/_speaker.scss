@@ -17,11 +17,20 @@
   .speker-detail {
     ul {
       list-style: none;
+      @include media-breakpoint-down(md){ 
+        padding-left: 1.5rem;
+      }
       li {
         flex: 0 0 50%;
         font-family: $secondary-font;
         text-transform: uppercase;
         margin-bottom: 20px;
+        @include media-breakpoint-down(md){ 
+          flex: 0 0 100%;
+          padding-left: 15px;
+          text-indent: -17px;
+          margin-bottom: 12px;
+        }
         svg {
           margin-right: 5px;
         }
@@ -46,6 +55,10 @@
   }
   .social__media__icons {
     justify-content: flex-start;
+    svg {
+      width: 43px;
+      height: 43px;
+    }
     @include media-breakpoint-down(lg){ 
       margin-top: .5rem;
     }
