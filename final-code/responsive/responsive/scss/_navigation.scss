@@ -3,7 +3,7 @@
 }
 .nav__bar{
     @include media-breakpoint-up(md){
-        background-color: black;
+        background-color: $black;
     }    
     margin-top: 1.125rem;
 }
@@ -15,11 +15,15 @@
         align-items: center;
         gap: 8px;
         line-height: 1.125rem;
+        &.dropdown-item {
+            padding: 10px 9px;
+    }
         @include media-breakpoint-down(md){
             // color: #000;
         }
         &:hover,  &:focus {
             color: $pink;
+            background: none;
         }
         
     }

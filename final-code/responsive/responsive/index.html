@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>            
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container-md">
@@ -70,7 +71,15 @@
 
                 </li>
                 <li class="nav-item dropdown__nav">
-                  <a class="nav-link" href="#">Event Info</a>
+                  <a class="nav-link dropdown-toggle active ps-0"  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false" href="#">Event Info</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Event Info Sub Item</a></li>
+                    <li><a class="dropdown-item" href="#">Event Info Sub Item1</a></li>
+                    <li><a class="dropdown-item" href="#">Event Info Sub Item2</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Past Events</a>

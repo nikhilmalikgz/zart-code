@@ -1,5 +1,10 @@
 .accordion__outer--block{
     padding: 1.25rem;
+    @include media-breakpoint-down(lg){
+    .accordion-body .card img {       
+        width: 100%;
+        }
+    }
     @include media-breakpoint-down(sm){
         padding: .9375rem;
     }

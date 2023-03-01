@@ -63,12 +63,6 @@ header{
     p{
         margin-bottom: 0;
     } 
-    .container-md {
-        @include media-breakpoint-down(lg){
-         padding-left: 0;
-         padding-right: 0;   
-        }
-    }  
 }
 
 

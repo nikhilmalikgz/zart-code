@@ -34,7 +34,7 @@
     position: relative;
         &::before{
             content: "";
-            border: 1px solid #C5D646;
+            border: 1px solid $yellow;
             width: 100%;
             height: 100%;
             position: absolute;
