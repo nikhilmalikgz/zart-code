@@ -15,10 +15,14 @@
         flex: 0 0 50%;
         font-family: $secondary-font;
         text-transform: uppercase;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+        svg {
+          margin-right: 5px;
+        }
         &:last-child {
           flex: 0 0 100%;
           margin-bottom: 0;
+          
         }
       }
     }
