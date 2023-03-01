@@ -123,7 +123,6 @@ $accordion-button-focus-box-shadow:transparent;
 // Custom styles
 //
 
-@import "icon-list";
 @import "common/variables";
 @import "common/mixins";
 @import "common/global";
@@ -131,11 +130,12 @@ $accordion-button-focus-box-shadow:transparent;
 @import "navigation";
 @import "components/accordion";
 @import "components/banner-inner-pages";
+@import "components/icon-list";
 @import "footer";
 
 @import "pages/home-page";
 @import "pages/program";
-// @import "pages/pricing";
+@import "pages/pricing";
 @import "pages/speker";
 
 

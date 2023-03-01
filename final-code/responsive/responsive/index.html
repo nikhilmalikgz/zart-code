@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="container-md">
+    <div class="container-md">
         <header class="row justify-content-between header__row">
           <div class="col mobile__header--cont">
             <div class="header__left--block">
@@ -59,7 +58,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navigation__links">
                 <li class="nav-item dropdown__nav">
-                  <a class="nav-link active ps-0" aria-current="page" href="#">About</a>
+                  <a class="nav-link dropdown-toggle active ps-0"  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false" href="#">About</a>                 
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+
                 </li>
                 <li class="nav-item dropdown__nav">
                   <a class="nav-link" href="#">Event Info</a>
@@ -144,8 +152,8 @@
           </div>
         </div>
       
-      </div>
-    </header>
+    </div>
+
 
     <div class="container hero__section">
       <div class="row">
@@ -255,13 +263,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -280,13 +288,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -305,13 +313,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -330,13 +338,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -355,13 +363,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -445,13 +453,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -470,13 +478,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -495,13 +503,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -520,13 +528,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -545,13 +553,13 @@
                               <div class="col-6">
                                 <div class="card">
                                   <div class="card__banner border-effect-workshop">
-                                    <img src="/media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
+                                    <img src="media/workshop_acc_banner.png" class="card-img-top img-fluid" alt="...">
                                   </div>                                  
                                   <div class="card-body">
                                     <h5 class="card-title">Excepteur sint occaecat cup non proident, sunt in cul</h5>
                                     <div class="workshop__artist-detail">
                                       <div class="profile__pic">
-                                        <img src="/media/artist_pic.png" alt="" class="img-fluid">
+                                        <img src="media/artist_pic.png" alt="" class="img-fluid">
                                       </div>
                                       <div class="profile__info">
                                         <h6>Tania Di Berardino</h6>
@@ -608,7 +616,7 @@
             <div class="col-12">
               <div class="ftr__logo--block">
                 <div class="logo">
-                  <img src="/media/logo_footer.png" alt="">
+                  <img src="media/logo_footer.png" alt="">
                 </div>
                 <div class="conference__title">
                   <span>
@@ -645,7 +653,7 @@
               <p>We respectfully acknowledge that the Zart Conference is hosted on the traditional lands of the Bunurong people. We pay our respects to Elders past, present and emerging.</p>
             </div>
             <hr>
-            <div class="col-lg-6 order-sm-1 order-2">
+            <div class="col-lg-6 order-sm-1 order-2 p-0">
               <ul class="footer__imp-nav nav navigation__links">
                 <li class="nav-item">
                   <a href="#" class="nav-link">Privacy Policy</a>
@@ -655,7 +663,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-6 order-sm-2 order-1">
+            <div class="col-lg-6 order-sm-2 order-1 p-0">
               <ul class="nav social__media__icons">
                 <li>
                   <a href="">
@@ -696,6 +704,7 @@
       </div>
     </footer>
     
-    <script type="module" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -55,4 +55,7 @@
     text-transform: uppercase;
     font-weight: 400;
     display: inline-block;
+    &:hover {
+        color: $pink;
+    }
 }

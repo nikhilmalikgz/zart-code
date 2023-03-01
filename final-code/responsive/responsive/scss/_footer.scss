@@ -51,7 +51,13 @@
         @include media-breakpoint-up(lg){
             justify-content: flex-start;
         }
-        
+        li {
+          &:first-child {
+            a {
+                padding-left: 0;
+            }
+          }  
+        }
         a{
             color: #fff;
             padding-top: 0px;
