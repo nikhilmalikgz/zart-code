@@ -1,0 +1,9 @@
+.images-grid {
+  padding: 5rem 0;
+  @include media-breakpoint-down(xl){
+    padding: 4rem 0;
+}
+  img {
+    width: 100%;
+  }
+}

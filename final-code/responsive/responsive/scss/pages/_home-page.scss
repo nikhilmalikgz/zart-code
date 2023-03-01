@@ -127,9 +127,6 @@
     h4{
         max-width: 28.75rem;
         margin:0 auto;
-        @include media-breakpoint-down(sm){
-            font-size: 2rem;
-        }
     }
    
 }

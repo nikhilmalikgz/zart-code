@@ -77,6 +77,16 @@
         justify-content: center;
         margin-top: .9375rem;
     }
+    a {
+        &:hover {
+            rect {
+                fill: $pink;
+            }
+            path {
+                fill: $white;
+            }
+        }
+    }
     svg {
         @include media-breakpoint-down(sm){
             width: 30px;

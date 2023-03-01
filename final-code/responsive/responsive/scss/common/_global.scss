@@ -24,7 +24,7 @@ h1{
 h4{
     @include zt-heading-4(#000);
     @include media-breakpoint-down(sm){
-        font-size: 1.875rem;
+        font-size: 2rem;
     }
 }
 h6{
@@ -65,20 +65,18 @@ h6{
     --bs-btn-color:#000;
 }
 
-
-/*******background graphics*******/
-.traingle-shape {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-
 .pr-0{
     padding-right: 0;
 }
 .pl-0{
     padding-left: 0;
+}
+
+/*************background Classes****/
+.bg-retro {
+    background-image: url(../media/bg-retro-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;;
 }
 .orange-bg{
     background-color: $orange;
@@ -88,4 +86,35 @@ h6{
 }
 .blue{
     background-color: $blue;
+}
+
+/*******background graphics*******/
+.traingle-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    &--right {
+        right: 0;
+        left: inherit;
+    }
+    @include media-breakpoint-down(lg){ 
+        display: none;
+    }
+}
+.dot-graphics-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include media-breakpoint-down(lg){ 
+        display: none;
+    }
+}
+.dot-graphics-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include media-breakpoint-down(lg){ 
+        display: none;
+    }
 }
