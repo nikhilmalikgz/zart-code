@@ -3,7 +3,7 @@
   position: relative;
   .bg-light {
     background: #F5F5F5;
-    padding: .8rem 0;
+    padding: 1.2rem 0;
   }
   h6 {
     color: $grey;
@@ -15,10 +15,14 @@
         flex: 0 0 50%;
         font-family: $secondary-font;
         text-transform: uppercase;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        svg {
+          margin-right: 5px;
+        }
         &:last-child {
           flex: 0 0 100%;
           margin-bottom: 0;
+          
         }
       }
     }

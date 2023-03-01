@@ -134,6 +134,9 @@
 }
 .video--cont{
     margin-top: 2.125rem;
+    img {
+        width: 100%;
+    }
     .play-icon {
         position: absolute;
         top: 50%;
