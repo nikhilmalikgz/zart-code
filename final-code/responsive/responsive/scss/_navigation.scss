@@ -18,6 +18,10 @@
         @include media-breakpoint-down(md){
             // color: #000;
         }
+        &:hover {
+            color: $pink;
+        }
+        
     }
     .dropdown__nav{
         position: relative;
