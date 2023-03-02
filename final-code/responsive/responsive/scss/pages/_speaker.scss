@@ -2,11 +2,13 @@
   padding: 2.5rem 0;
   position: relative;
   @include media-breakpoint-down(lg){ 
+    padding:2rem 0 2.5rem 0;
     .info--title {
       text-align: center;
       margin-bottom: 10px;
     }
   }
+
   .bg-light {
     background: #F5F5F5;
     padding: 1.2rem 0;
@@ -17,7 +19,8 @@
   .speker-detail {
     ul {
       list-style: none;
-      @include media-breakpoint-down(md){ 
+      padding-left: 2.5rem;
+      @include media-breakpoint-down(xl){ 
         padding-left: 1.5rem;
       }
       li {
@@ -25,10 +28,12 @@
         font-family: $secondary-font;
         text-transform: uppercase;
         margin-bottom: 20px;
-        @include media-breakpoint-down(md){ 
-          flex: 0 0 100%;
+        @include media-breakpoint-down(xl){ 
           padding-left: 15px;
           text-indent: -17px;
+        }
+        @include media-breakpoint-down(md){ 
+          flex: 0 0 100%;
           margin-bottom: 12px;
         }
         svg {
