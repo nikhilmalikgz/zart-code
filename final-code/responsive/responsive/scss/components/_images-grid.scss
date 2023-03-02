@@ -1,7 +1,17 @@
 .images-grid {
   padding: 5rem 0;
   @include media-breakpoint-down(xl){
-    padding: 4rem 0;
+    padding: 3rem 0;
+}
+@include media-breakpoint-down(lg){
+  .row.mt-3 {
+   margin-left: -8px;
+   margin-right: -8px;
+}
+  .col-md-6 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
   img {
     width: 100%;

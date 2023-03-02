@@ -2,7 +2,7 @@
   padding: 5rem 0;
   position: relative;
   @include media-breakpoint-down(xl){
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 .heading-for-mobile {
   display: none;
@@ -38,6 +38,9 @@
   p {
     font-size: 1.125rem;
     line-height: 1.575rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   .video--cont { 
     @include media-breakpoint-down(lg){ 
