@@ -1,0 +1,106 @@
+.faq-accordion {
+  .accordion-item {
+    margin-bottom: 20px;
+    .accordion-body {
+      border: 1px solid #E1E1E1;
+  }
+        color: $black;
+        .accordion-button {
+          &::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 14' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M10.9857 8.3821L2.68985 0L0 2.94276L10.9859 14L22 2.94276L19.3102 0L10.9857 8.3821Z'/%3e%3c/svg%3e");
+          }
+        }
+    &:first-child, &:nth-child(5){
+      .accordion-button {
+        background: #FCEAF3;
+      }
+    }
+    &:nth-child(2), &:nth-child(6){
+      .accordion-button {
+        background: #CCDEEE;
+      }
+    }
+    &:nth-child(3), &:nth-child(7){
+      .accordion-button {
+        background: #FEE9D2;
+      }
+    }
+    &:nth-child(4), &:nth-child(8){
+      .accordion-button {
+        background: #B6FFE9;
+      }
+    }
+  }
+
+    .accordion-button {
+      font-size: 2.5rem;
+      color: $black;
+      padding-top: 1.125rem;
+      padding-bottom: 1.125rem;
+      @include media-breakpoint-down(md){
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        padding: 1.075rem .945rem;
+    }
+    }
+
+  .accordion_child {
+    .accordion-item {
+      margin-bottom: 0;
+      border-bottom: 1px solid #E1E1E1;
+      padding-bottom: 1.365rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      @include media-breakpoint-down(md){
+        padding-left: .945rem;
+        padding-right: .945rem;
+        padding-bottom: .925rem;
+    }
+      &:last-child{
+        border-bottom: none;
+      }
+      .accordion-body {
+        border: none;
+    }
+      .accordion-button {
+        background: none;
+        font-size: 1.375rem;
+        font-weight: 600;
+        padding-top: 1.365rem;
+        padding-bottom: 0;
+        @include media-breakpoint-down(md){
+          padding-top: .925rem;
+          font-size: 1.125rem;
+          line-height: 1.565rem;
+        }
+        &:not(.collapsed)::after {
+          content: " ";
+          background-image: none;
+          transform: none;
+          background-color: $black;
+          width: 14px;
+          height: 3px;
+        }
+        &.collapsed:after {
+          content: " ";
+          background-image: none;
+          transform: none;
+          background-color: $black;
+          width: 14px;
+          height: 3px
+        }
+        &.collapsed:before {
+          content: " ";
+          background-image: none;
+          transform: none;
+          background-color: $black;
+          width: 3px;
+          height: 15px;
+          position: absolute;
+          right: 5px;
+        }
+      }
+      
+    }
+  }
+}
