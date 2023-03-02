@@ -47,20 +47,6 @@
         padding-bottom: 1.875rem;
     }
     
-        .traingle-shape{
-            bottom: 0;
-            top: auto;
-            @include media-breakpoint-down(lg){
-                display: none;
-            }
-            &.reverse{
-                right: 0;
-                top: -90px;
-                left: auto;
-            }
-        }
-        
-    
     .block{
         margin-bottom: 30px;
         .pr-0{
@@ -155,7 +141,7 @@
                         line-height: 1.675rem;
                     }
                     &::before{
-                        background: url(../../media/Vector.png) no-repeat;
+                        background: url(../media/Vector.png) no-repeat;
                         content: "";
                         left: 0;
                         position: absolute;
