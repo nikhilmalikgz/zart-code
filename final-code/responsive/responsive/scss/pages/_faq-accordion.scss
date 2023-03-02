@@ -37,8 +37,10 @@
       color: $black;
       padding-top: 1.125rem;
       padding-bottom: 1.125rem;
-      @include media-breakpoint-down(sm){
-        font-size: 2rem;
+      @include media-breakpoint-down(md){
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        padding: 1.075rem .945rem;
     }
     }
 
@@ -49,6 +51,11 @@
       padding-bottom: 1.365rem;
       padding-left: 1.25rem;
       padding-right: 1.25rem;
+      @include media-breakpoint-down(md){
+        padding-left: .945rem;
+        padding-right: .945rem;
+        padding-bottom: .925rem;
+    }
       &:last-child{
         border-bottom: none;
       }
@@ -61,6 +68,11 @@
         font-weight: 600;
         padding-top: 1.365rem;
         padding-bottom: 0;
+        @include media-breakpoint-down(md){
+          padding-top: .925rem;
+          font-size: 1.125rem;
+          line-height: 1.565rem;
+        }
         &:not(.collapsed)::after {
           content: " ";
           background-image: none;

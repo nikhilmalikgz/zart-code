@@ -127,6 +127,9 @@ h6{
     p {
         font-size: 1.125rem;
         line-height: 1.575rem;
+        @include media-breakpoint-down(md){
+            font-size: 1rem;
+        }
         &:last-child {
           margin-bottom: 0;
         }
