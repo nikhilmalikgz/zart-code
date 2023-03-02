@@ -29,16 +29,32 @@
     }
 }
 .pricing_module{
+    position: relative;
     @include media-breakpoint-down(lg){
         padding-bottom: 1.875rem;
     }
+    
+        .traingle-shape{
+            bottom: 0;
+            top: auto;
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+            &.reverse{
+                right: 0;
+                top: -90px;
+                left: auto;
+            }
+        }
+        
+    
     .block{
         margin-bottom: 30px;
 
         .offer_package{
             padding: 1.5rem;
             color: $white;
-           
+            height: 100%;
             h4{
                 font-size: 1.5rem;
                 line-height: 2.8rem;
@@ -83,7 +99,8 @@
         .package_properites{
             border: 1px solid #E1E1E1;
             box-shadow: 0px 4px 50px rgba(226, 226, 226, 0.25);
-            padding: 2.125rem 1.875rem;
+            padding: 1.65rem 1.875rem;
+            background-color: $white;
             @include media-breakpoint-down(lg){
                 padding-bottom: 1.5rem;
             }
