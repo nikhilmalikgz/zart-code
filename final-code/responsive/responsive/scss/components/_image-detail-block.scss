@@ -34,14 +34,6 @@
     position: relative;
     z-index: 1;
   }
-
-  p {
-    font-size: 1.125rem;
-    line-height: 1.575rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
   .video--cont { 
     @include media-breakpoint-down(lg){ 
       margin-bottom: 20px;

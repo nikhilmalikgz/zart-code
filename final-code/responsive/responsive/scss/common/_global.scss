@@ -121,3 +121,14 @@ h6{
         display: none;
     }
 }
+
+/***********Common p having font size 18px****/
+.image-detail-block, .accordion-body {
+    p {
+        font-size: 1.125rem;
+        line-height: 1.575rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+}
