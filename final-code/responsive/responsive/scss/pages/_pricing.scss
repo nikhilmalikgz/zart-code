@@ -9,15 +9,16 @@
         }
      }
     .conf__info--block{
-        padding: 2.8rem  ;
+        padding:0 2.8rem  ;
+        gap:0;
         @include media-breakpoint-down(lg){
             background: url('../../media/program-banner.png') no-repeat center center;   
             color: $white; 
             text-align: center; 
             align-items: center;
-            padding: 4rem 2rem;
+            padding: 0 2rem;
             @media screen and (max-width:1025px){
-                padding: 2.4rem;
+                padding: 0 2.4rem;
             }
         }
         h1{
@@ -50,7 +51,16 @@
     
     .block{
         margin-bottom: 30px;
-
+        .pr-0{
+            @include media-breakpoint-down(lg){
+               padding-right: calc(var(--bs-gutter-x)*.5);
+            }
+        }
+        .pl-0{
+            @include media-breakpoint-down(lg){
+                padding-left: calc(var(--bs-gutter-x)*.5);
+             }
+        }
         .offer_package{
             padding: 1.5rem;
             color: $white;
