@@ -44,6 +44,12 @@
 }
 .border-effect-2{
     @include border-effect-2;
+    &.art_block{
+        &::before{
+            top: -1.175rem;
+            left: 1.175rem;
+        }
+    }
     &.yellow-border {
         &::before{
             border: 2px solid $yellow;

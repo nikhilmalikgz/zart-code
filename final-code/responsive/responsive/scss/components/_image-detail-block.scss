@@ -3,7 +3,16 @@
   position: relative;
   @include media-breakpoint-down(xl){
     padding: 3rem 0;
-}
+  }
+  &.art_block{
+    padding: 1rem 0 5rem 0;
+    @include media-breakpoint-down(xl){
+      padding: 1rem 0 3.75rem 0;
+    }
+    @include media-breakpoint-down(md){
+      padding: 1rem 0 2.5rem 0;
+    }
+  }
 .heading-for-mobile {
   display: none;
   @include media-breakpoint-down(lg){ 
