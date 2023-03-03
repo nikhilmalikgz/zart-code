@@ -33,7 +33,7 @@ h4{
 h6{
     @include zt-heading-6(#000000);
 }
-.heading-32 {
+.heading-34 {  
         font-size: 2.125rem;
         @include media-breakpoint-down(sm){
             font-size: 2rem;
@@ -82,9 +82,13 @@ h6{
 
 /*************background Classes****/
 .bg-retro {
-    background-image: url(../media/bg-retro-white.png);
+    background: url(../media/bg-retro-white.png) #fff;
     background-repeat: no-repeat;
-    background-size: cover;;
+    background-size: cover;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
 }
 .orange-bg{
     background-color: $orange;
