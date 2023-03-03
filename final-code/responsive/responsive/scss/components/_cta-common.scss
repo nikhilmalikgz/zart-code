@@ -1,0 +1,13 @@
+.cta-common {
+  padding-top: 2.4rem;
+  padding-bottom: 2.3rem;
+  @include media-breakpoint-down(md){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &.white-color {
+    h4, p {
+      color: $white;
+    }
+  }
+}

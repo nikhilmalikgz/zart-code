@@ -133,6 +133,7 @@ $accordion-button-focus-box-shadow:transparent;
 @import "components/image-detail-block";
 @import "components/images-grid";
 @import "components/icon-list";
+@import "components/cta-common";
 @import "footer";
 
 @import "pages/home-page";
@@ -142,8 +143,9 @@ $accordion-button-focus-box-shadow:transparent;
 @import "pages/faq-accordion";
 @import "pages/media";
 @import "pages/about";
-@import "pages/partners";
-// @import "pages/media";
+@import "pages/art";
+@import "pages/conatct";
+
 
 
 body{

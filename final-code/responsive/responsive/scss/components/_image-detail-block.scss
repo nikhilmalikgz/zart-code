@@ -1,41 +1,21 @@
 .image-detail-block { 
   padding: 5.3rem 0 4.5rem 0;
   position: relative;
+  .col-lg-7 {
+    margin-top: -1rem;
+    @include media-breakpoint-down(lg){ 
+      margin-top: 0;
+    }
+  }
   @include media-breakpoint-down(xl){
-    padding: 3rem 0;
-  }
-  &.art_block{
-    padding: 1rem 0 5rem 0;
-    @include media-breakpoint-down(xl){
-      padding: 1rem 0 3.75rem 0;
-    }
-    @include media-breakpoint-down(md){
-      padding: 1rem 0 2.5rem 0;
-    }
-  }
-  a.more_link{
-    font-weight: 600;
-    font-size: 0.8rem;
-    line-height: 1.375rem;
-    color: #1FA79D;
-    svg{
-      margin-left: 0.3rem;
-    }
-  }
-  .events{
-    margin-bottom:3rem;
-    h2{
-      font-size: 2.125rem;
-      font-weight: 400;
-      font-family: $secondary-font;
-      line-height: 3.125rem;
-    }
-  }
+    padding: 4rem 0 3rem 0;
+}
 .heading-for-mobile {
   display: none;
   @include media-breakpoint-down(lg){ 
     display: block;
     margin-bottom: 25px;
+    margin-top: -1rem;
   }
 }
 .heading-for-desktop {
@@ -49,7 +29,6 @@
   p {
     color: $black;
   }
-  
   &--dark {
     h6 {
       color: $yellow;

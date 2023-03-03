@@ -26,6 +26,7 @@
         font-size: 1.375rem;
         margin-bottom: 0;
         line-height: 2.125rem;
+        color: $black;
         @media screen and (max-width:1025px){
             font-size: 1.25rem;
         }
@@ -202,18 +203,6 @@
             margin-top: .6875rem;
             margin-bottom: .8125rem;
             line-height: 1.6875rem;
-        }
-        .wk__link{
-            color: #1FA79D;
-            font-size: .875rem;
-            line-height: 1.3125rem;            
-            font-weight: 600;
-                span{
-                    text-decoration: underline;                    
-                }
-                svg{
-                    margin-left: .3125rem;;
-                }
         }
     }
     .card-text {

@@ -36,7 +36,10 @@ h6{
 .heading-34 {  
         font-size: 2.125rem;
         @include media-breakpoint-down(sm){
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+        &.oswald-font {
+            font-family: $secondary-font;
         }
 }
 /****************Buttons**********/
@@ -72,7 +75,18 @@ h6{
     --bs-btn-border-color:#000;
     --bs-btn-color:#000;
 }
-
+.wk__link{
+    color: #1FA79D;
+    font-size: .875rem;
+    line-height: 1.3125rem;            
+    font-weight: 600;
+        span{
+            text-decoration: underline;                    
+        }
+        svg{
+            margin-left: .3125rem;;
+        }
+}
 .pr-0{
     padding-right: 0;
 }
@@ -108,7 +122,9 @@ h6{
 .blue{
     background-color: $blue;
 }
-
+.blue-bg{
+    background-color: $blue;
+}
 /*******background graphics*******/
 .traingle-shape {
     position: absolute;
