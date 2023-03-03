@@ -24,12 +24,30 @@
   }
   .events{
     margin-bottom:3rem;
-    h2{
-      font-size: 2.125rem;
-      font-weight: 400;
-      font-family: $secondary-font;
-      line-height: 3.125rem;
+    &:last-child{
+      @include media-breakpoint-down(lg){ 
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom:0;
+      }
     }
+    @include media-breakpoint-down(lg){ 
+      border-bottom: 1px solid #CBCBCB;
+      padding-bottom: 2rem;
+    }
+    .heading-for-desktop{
+      @include media-breakpoint-down(lg){ 
+        display: block;
+       
+      }
+      h2{
+        font-size: 2.125rem;
+        font-weight: 400;
+        font-family: $secondary-font;
+        line-height: 3.125rem;
+      }
+    }
+    
   }
 .heading-for-mobile {
   display: none;
