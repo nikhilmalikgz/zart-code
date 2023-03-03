@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/pages/art.scss"],"names":[],"mappings":"AAAA,kBACI,aACA,oBACA,8BACI,iBACA,kBACA,gCACI,wBACA","file":"art.css","sourcesContent":[".text-image-block{\r\n    display: none;\r\n    padding: 2rem 0 4rem;\r\n    .text_block{\r\n        margin-top: -1rem;\r\n        padding-left: 2rem;\r\n        p{    \r\n            padding-bottom: 1.875rem;\r\n            margin-bottom: 0;\r\n        }\r\n    }\r\n}"]}
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"art.css","sourcesContent":[]}

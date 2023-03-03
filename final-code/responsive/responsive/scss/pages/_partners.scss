@@ -1,0 +1,39 @@
+.partner_block{
+    h2{
+        font-family: $secondary-font;
+        font-size: 2.1rem ;
+        line-height: 3.125rem;
+        font-weight: 400;
+    }
+    padding: 0 0 5rem;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 1.875rem;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 1.575rem;
+    }
+    .partners_wrap{
+        padding-top: 1.75rem;
+        @include media-breakpoint-down(lg){
+            padding-top: 1.25rem;
+        }
+        .box{
+            background-color: $white;
+            min-height: 234px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #E1E1E1;
+            box-shadow: 0px 4px 50px rgba(226, 226, 226, 0.25);
+            @include media-breakpoint-down(lg){
+                margin-bottom: 1.875rem;
+            }
+            @include media-breakpoint-down(md){
+                margin-bottom: 0.975rem;
+                min-height: 169px;
+            }
+        }
+
+    }
+}
