@@ -1,10 +1,24 @@
 .edu-program {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  @include media-breakpoint-down(xl){
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+} 
   h6 {
     color: $grey;
   }
   p {
     color: $black;
+  }
+  .text-center {
+    @include media-breakpoint-down(lg){
+    text-align: left  !important;
+    }
+  }
+  .video--cont {
+    @include media-breakpoint-down(md){
+    margin-right: .75rem;
+    }
   }
 }

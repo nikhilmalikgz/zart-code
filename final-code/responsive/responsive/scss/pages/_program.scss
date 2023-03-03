@@ -10,9 +10,6 @@
   p{
     &:first-child{
       margin-top: -0.875rem;
-      @include media-breakpoint-down(lg){
-        margin-top: 0;
-      }
     }
   }
 }

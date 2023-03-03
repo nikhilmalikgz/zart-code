@@ -49,11 +49,15 @@
     }
     
   }
+  @include media-breakpoint-down(xl){
+    padding: 4rem 0 3rem 0;
+}
 .heading-for-mobile {
   display: none;
   @include media-breakpoint-down(lg){ 
     display: block;
     margin-bottom: 25px;
+    margin-top: -1rem;
   }
 }
 .heading-for-desktop {
@@ -67,7 +71,6 @@
   p {
     color: $black;
   }
-  
   &--dark {
     h6 {
       color: $yellow;

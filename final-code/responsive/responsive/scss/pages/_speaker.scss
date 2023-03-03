@@ -41,6 +41,7 @@
         }
         span {
           vertical-align : middle;
+          color: #000000;
         }
         &:last-child {
           flex: 0 0 100%;
@@ -53,11 +54,7 @@
 }
 
 .artist-detail {
-  &.image-detail-block {
-    h6 {
-    margin-top: -0.875rem;
-  }
-  }
+
   .social__media__icons {
     justify-content: flex-start;
     svg {
