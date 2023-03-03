@@ -1,0 +1,15 @@
+.media-section {
+  padding: 1rem 0 1.5rem 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 1rem 0 .5rem 0;
+  }
+  .video--cont {
+    margin-bottom: 2.8rem;
+    margin-right: 1.1rem;
+    @include media-breakpoint-down(md){
+      margin-bottom: 2.2rem;
+      margin-right: .9rem;
+    }
+}
+}
