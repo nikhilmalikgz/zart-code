@@ -63,6 +63,10 @@
         font-weight: 400;
         font-family: $secondary-font;
         line-height: 3.125rem;
+        @include media-breakpoint-down(lg){
+          font-size: 1.875rem;
+          line-height: 2rem;
+        }
       }
     }
     
