@@ -5,9 +5,9 @@
     padding: 3rem 0;
   }
   &.art_block{
-    padding: 1rem 0 2rem 0;
+    padding-top: 1rem;
     @include media-breakpoint-down(xl){
-      padding: 1rem 0 2rem 0;
+      padding-top: 1rem;
     }
   }
  
@@ -29,6 +29,7 @@
   .events{
     margin-bottom:3rem;
     &:last-child{
+      margin-bottom: 0;
       &:after {
         display: none;
       }

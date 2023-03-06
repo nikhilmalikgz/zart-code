@@ -1,11 +1,24 @@
 .past-event-detail {
   padding: 2.5rem 0;
+  @include media-breakpoint-down(lg){
+    padding: 1.875rem 0 .5rem 0;
+  }
   .video--cont {
     position: relative;
     z-index: 1;
   }
   .image-detail-block {
     padding:50px 30px 30px 30px;
+  }
+  @include media-breakpoint-down(xl){
+  .container {
+      max-width: 100%;
+      padding: 0;
+     .image-detail-block {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+  }
   }
 }
 

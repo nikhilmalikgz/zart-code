@@ -146,11 +146,12 @@ $accordion-button-focus-box-shadow:transparent;
 @import "pages/art";
 @import "pages/contact";
 @import "pages/partners";
-
+@import "pages/past-events";
 
 
 body{
   border-top: 6px solid #000;
+  color: $black;
   @include media-breakpoint-down(md){
     border-top: 2px solid #000;
   }
