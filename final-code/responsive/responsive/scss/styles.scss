@@ -151,6 +151,7 @@ $accordion-button-focus-box-shadow:transparent;
 
 body{
   border-top: 6px solid #000;
+  color: $black;
   @include media-breakpoint-down(md){
     border-top: 2px solid #000;
   }
