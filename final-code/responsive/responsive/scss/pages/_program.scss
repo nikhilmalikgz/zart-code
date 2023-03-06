@@ -12,8 +12,43 @@
       margin-top: -0.875rem;
     }
   }
+  &.art_block{
+    p{
+      &:first-child{
+        @include media-breakpoint-down(lg){
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 .day_tabs{
+  position: relative;
+  padding-bottom: 5rem;
+  .tabs-sec-wrap{
+    border: 1px solid #8B8B8B;
+    @include media-breakpoint-down(lg){
+      border: none;
+    }
+    .tab-content{
+      padding: 0 1.875rem;
+      @include media-breakpoint-down(lg){
+        padding: 0 ;
+      }
+    }
+    .day{
+      font-family: $secondary-font;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      text-transform: uppercase;
+    }
+    .date{
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 0.875rem;
+    }
+  }
   .section_heading{
     h2{
       font-size: 2.5rem;
@@ -23,10 +58,16 @@
       color: $black;
       text-transform: uppercase;
       padding-top: 1.875rem;
+      font-family: $primary-font;
     }
   }
   .long_card{
     border-bottom: 1px solid #CBCBCB;
+    &:last-child{
+      @include media-breakpoint-down(lg){
+        border: 0;
+      }
+    }
     .row{
       padding-bottom: 1.875rem;
     }
@@ -41,6 +82,11 @@
       color: #C04093;
       padding-left: 1.5rem;
       position: relative;
+      width: 100%;
+      display: inline-block;
+      @include media-breakpoint-down(md){
+        display: none;
+      }
       &::before{
         position: absolute;
         content: '';
@@ -49,6 +95,7 @@
         height: 12px;
         left: 0.01rem;
         top: 0.3rem;
+        
       }
     }
     h2{
@@ -57,11 +104,17 @@
       line-height: 3.125rem;
       font-family: $secondary-font;
       font-weight: 400;
-      
+      @include media-breakpoint-down(md){
+        font-size: 1.125rem;
+        line-height: 1.725rem;
+      }
     }
     p.content{
       color: $black;
       padding-bottom: 1rem;
+      @include media-breakpoint-down(md){
+        display: none;
+      }
     }
   }
   .author_details{
@@ -71,11 +124,22 @@
       .authors_wrap{
         display: flex;
         padding-bottom: 1.5rem;
+        @include media-breakpoint-down(md){
+          border-bottom: 1px solid #353535;
+          padding-bottom: 0.8rem;
+        }
         .image-wrap{
           padding-right: 1rem;
+          @include media-breakpoint-down(md){
+            padding-right: 0.5rem;
+          }
+          img{
+            @include media-breakpoint-down(lg){
+              max-width: 35px;
+           }
+          }
         }
         .author_info{
-         
           .name{
             margin-bottom: 0;
             font-size: 0.875rem;
@@ -91,6 +155,9 @@
           }
         }
       }
+      @include media-breakpoint-down(lg){
+        padding: 1.275rem 0;
+     }
     }
 
   }
@@ -99,8 +166,14 @@
     .short_card{
       margin-bottom: 2rem;
       .video--cont{
+        
         img{
           max-width: 98%;
+        }
+        .play-icon{
+          @include media-breakpoint-down(lg){
+            display: none;
+          }
         }
         &::before {
           left: 0.3rem;
@@ -110,6 +183,16 @@
         .content_wrap{
           background-color: #F8F8F8;
           padding: 1.25rem;
+          @include media-breakpoint-down(md){
+            padding: 0.275rem 0;
+            width: 100%;
+          }
+          .wk__link{
+            @include media-breakpoint-down(md){
+              padding-top: 0.5rem;
+              display: inline-block;
+            }
+          }
         }
       }
     }
