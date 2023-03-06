@@ -55,6 +55,7 @@
     padding: 1.125rem 1.875rem;
     @include media-breakpoint-down(sm){
         padding: 1.25rem;
+        margin-top: 1rem;
     }
     .social__link{
         display: flex;
@@ -154,6 +155,9 @@
     margin-bottom: 1.875rem;
     @include media-breakpoint-down(lg){ 
         margin-top: 3rem;
+    }
+    @include media-breakpoint-down(sm){ 
+        margin-bottom: 1rem;
     }
     h4{
         color: $white;

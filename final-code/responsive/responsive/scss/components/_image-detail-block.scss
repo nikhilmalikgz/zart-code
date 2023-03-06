@@ -5,18 +5,33 @@
     padding: 3rem 0;
   }
   &.art_block{
-    padding: 1rem 0 5rem 0;
+    padding: 1rem 0 2rem 0;
     @include media-breakpoint-down(xl){
-      padding: 1rem 0 3.75rem 0;
-    }
-    @include media-breakpoint-down(md){
-      padding: 1rem 0 2.5rem 0;
+      padding: 1rem 0 2rem 0;
     }
   }
  
+  a.more_link{
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    color: #1FA79D;
+    &:hover {
+      color: #c04093;
+      path {
+        fill: #c04093;
+      }
+    }
+    svg{
+      margin-left: 0.3rem;
+    }
+  }
   .events{
     margin-bottom:3rem;
     &:last-child{
+      &:after {
+        display: none;
+      }
       @include media-breakpoint-down(lg){ 
         border-bottom: none;
         padding-bottom: 0;
@@ -24,9 +39,20 @@
       }
     }
     @include media-breakpoint-down(lg){ 
-      border-bottom: 1px solid #CBCBCB;
       padding-bottom: 2rem;
+      position: relative;
     }
+    &:after {
+      @include media-breakpoint-down(lg){ 
+      background: #CBCBCB;
+      width: calc(100% - 24px);
+      height: 1px;
+      content: "";
+      bottom: 0;
+      position: absolute;
+      left: 12px;
+      }
+  }
     .heading-for-desktop{
       @include media-breakpoint-down(lg){ 
         display: block;
