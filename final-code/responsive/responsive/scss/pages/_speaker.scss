@@ -54,7 +54,11 @@
 }
 
 .artist-detail {
-
+   .col-lg-7 {
+    @include media-breakpoint-up(lg){ 
+    margin-top: -1rem;
+    }
+   }
   .social__media__icons {
     justify-content: flex-start;
     svg {
