@@ -84,9 +84,7 @@
       position: relative;
       width: 100%;
       display: inline-block;
-      @include media-breakpoint-down(md){
-        display: none;
-      }
+      
       &::before{
         position: absolute;
         content: '';
@@ -112,9 +110,7 @@
     p.content{
       color: $black;
       padding-bottom: 1rem;
-      @include media-breakpoint-down(md){
-        display: none;
-      }
+      
     }
   }
   .author_details{
@@ -125,7 +121,6 @@
         display: flex;
         padding-bottom: 1.5rem;
         @include media-breakpoint-down(md){
-          border-bottom: 1px solid #353535;
           padding-bottom: 0.8rem;
         }
         .image-wrap{
@@ -186,6 +181,22 @@
           @include media-breakpoint-down(md){
             padding: 0.275rem 0;
             width: 100%;
+          }
+          .time{
+            @include media-breakpoint-down(md){
+              display: none;
+            }
+          }
+          .content{
+            @include media-breakpoint-down(md){
+              display: none;
+            }
+          }
+          .authors_wrap{
+            @include media-breakpoint-down(md){
+              border-bottom: 1px solid #353535;
+              padding-bottom: 0.8rem;
+            }
           }
           .wk__link{
             @include media-breakpoint-down(md){
