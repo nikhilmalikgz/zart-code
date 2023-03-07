@@ -25,6 +25,10 @@
 .day_tabs{
   position: relative;
   padding-bottom: 5rem;
+  @include media-breakpoint-down(lg){
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
   .tabs-sec-wrap{
     border: 1px solid #8B8B8B;
     @include media-breakpoint-down(lg){
@@ -42,23 +46,34 @@
       font-size: 1.25rem;
       line-height: 1.875rem;
       text-transform: uppercase;
+      @include media-breakpoint-down(md){ 
+        font-size: 1rem;
+        line-height: 1.4375rem;
+      }
     }
     .date{
       font-weight: 400;
       font-size: 0.875rem;
       line-height: 0.875rem;
+      @include media-breakpoint-down(md){ 
+        font-size: 0.75rem;
+      }
     }
   }
   .section_heading{
     h2{
       font-size: 2.5rem;
       line-height: 2.5rem;
-      font-weight: 700;
+      font-weight: 500;
       padding-bottom: 1.4rem;
       color: $black;
       text-transform: uppercase;
       padding-top: 1.875rem;
       font-family: $primary-font;
+      @include media-breakpoint-down(md){ 
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+      }
     }
   }
   .long_card{
@@ -68,11 +83,19 @@
         border: 0;
       }
     }
+    .author_long_card {
+      .video--cont {
+        @include media-breakpoint-down(lg){
+          margin-right: 1rem;
+        }
+      }
+    }
     .row{
       padding-bottom: 1.875rem;
     }
   }
   .author_details{
+
     .time{
       font-size: 1rem;
       line-height: 1.5rem;
@@ -88,11 +111,11 @@
       &::before{
         position: absolute;
         content: '';
-        background: url('../../media/time.svg') no-repeat center center;
+        background: url('../media/time.svg') no-repeat center center;
         width: 12px;
         height: 12px;
         left: 0.01rem;
-        top: 0.3rem;
+        top: 0.4rem;
         
       }
     }
@@ -102,14 +125,18 @@
       line-height: 3.125rem;
       font-family: $secondary-font;
       font-weight: 400;
+      @include media-breakpoint-down(xl){
+        font-size: 2.125rem;
+      line-height: 3rem;
+      }
       @include media-breakpoint-down(md){
-        font-size: 1.125rem;
-        line-height: 1.725rem;
+        font-size: 1.875rem;
+        line-height: 2.3125rem;
       }
     }
     p.content{
       color: $black;
-      padding-bottom: 1rem;
+      padding-bottom: .5rem;
       
     }
   }
@@ -151,7 +178,7 @@
         }
       }
       @include media-breakpoint-down(lg){
-        padding: 1.275rem 0;
+        padding: 1.275rem 0 0;
      }
     }
 
@@ -159,7 +186,22 @@
   .card-blocks{
     border-bottom: 1px solid #CBCBCB;
     .short_card{
+        h2 {
+          @include media-breakpoint-down(md){
+            font-size: 1.25rem;
+            line-height: 1.6875rem;
+          }
+        }
+      
       margin-bottom: 2rem;
+      @include media-breakpoint-down(lg){
+        margin-bottom: 3rem;
+      }
+      &:last-child{
+        @include media-breakpoint-down(lg){
+          margin-bottom: 1.875rem;
+        }
+      }
       .video--cont{
         
         img{
@@ -181,6 +223,7 @@
           @include media-breakpoint-down(md){
             padding: 0.275rem 0;
             width: 100%;
+            background: none;
           }
           .time{
             @include media-breakpoint-down(md){
